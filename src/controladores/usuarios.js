@@ -21,4 +21,8 @@ const cadastrarUsuarios = async (req, res) => {
     }
 }
 
-module.exports = { cadastrarUsuarios }
+const obterPerfil = async (req, res) => {
+    return res.json(req.usuario)
+}
+
+module.exports = { cadastrarUsuarios, obterPerfil }
